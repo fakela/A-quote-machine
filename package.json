@@ -15,9 +15,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/KoalaMango/jasmine-karma-travis-frost"
-  },
-    "bugs": {
-    "url": "https://github.com/KoalaMango/jasmine-karma-travis-frost/issues"
+    "url": "https://github.com/fakela/A-quote-machine.git"
   }
 }
