@@ -1,20 +1,12 @@
-{
-  "name": "Demo",
-  "version": "1.0.0",
-  "description": "jasmine + karma + travis",
-  "scripts": { 
-    "test": "karma start karma.conf.js --single-run"
-  },
-  "devDependencies": {
-    "jasmine-core": "^2.4.1",
-    "karma": "^0.13.22",
-    "karma-cli": "^0.1.2",
-    "karma-phantomjs-launcher": "^1.0.0",
-    "karma-jasmine": "^0.3.7",
-    "phantomjs-prebuilt": "^2.1.5"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/KoalaMango/jasmine-karma-travis-frost"
-  },
-}
+language: node_js
+node_js:
+    - 5.1
+before_install:
+    - export DISPLAY=:99.0
+    - sh -e /etc/init.d/xvfb start
+before_script:
+    - npm install
+script: node_modules/karma/bin/karma start karma.conf.js --single-run 
+cache:
+  directories:
+    - node_modules
