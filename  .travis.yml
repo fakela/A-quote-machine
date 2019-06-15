@@ -1,18 +1,9 @@
 language: node_js
 node_js:
-  - "node"
-  - "9"
-  - "8"
-  - "7"
-  - "6"
-  - "5"
-  - "4"
-  - "lts/*"
-  before_install:
-  - ./beforeInstall.sh
-install:
-  - ./install.sh
+    - "0.10"
+script: node_modules/karma/bin/karma start test.js --single-run
+before_install:
+    - export DISPLAY=:99.0
+    - sh -e /etc/init.d/xvfb start
 before_script:
-  - ./preTest.sh
-script:
-  - ./test.sh
+    - npm installnpm
