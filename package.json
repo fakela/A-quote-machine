@@ -1,7 +1,7 @@
 {
-  "name": "a-quote-machine",
+  "name": "FrostJSAutomatedTesting",
   "version": "1.0.0",
-  "description": "jasmine + karma + travis",
+  "description": "prototyope demo for Frost JS automated testing: jasmine + karma + travis",
   "scripts": { 
     "test": "karma start karma.conf.js --single-run"
   },
@@ -9,12 +9,12 @@
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.22",
     "karma-cli": "^0.1.2",
-    "karma-chrome-launcher": "^1.0.0",
+    "karma-phantomjs-launcher": "^1.0.0",
     "karma-jasmine": "^0.3.7",
     "phantomjs-prebuilt": "^2.1.5"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fakela/A-quote-machine.git"
+    "url": "https://github.com/KoalaMango/jasmine-karma-travis-frost"
   }
 }
