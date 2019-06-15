@@ -1,5 +1,5 @@
 {
-  "name": "FrostJSAutomatedTesting",
+  "name": "a-quote-machine",
   "version": "1.0.0",
   "description": "prototyope demo for Frost JS automated testing: jasmine + karma + travis",
   "scripts": { 
@@ -16,5 +16,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/KoalaMango/jasmine-karma-travis-frost"
+  },
+    "bugs": {
+    "url": "https://github.com/KoalaMango/jasmine-karma-travis-frost/issues"
   }
 }
